@@ -7,8 +7,7 @@ export interface IComment{
 }
 export interface ICommentDocument extends IComment, Document{
     createdAt:Date,
-    updatedAt:Date,
-    _id:any
+    updatedAt:Date
 }
 
 const commentSchema = new mongoose.Schema<ICommentDocument>({

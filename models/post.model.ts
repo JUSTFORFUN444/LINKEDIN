@@ -10,8 +10,7 @@ export interface IPost{
 }
 export interface IPostDocument extends IPost, Document{
     createdAt:Date,
-    updatedAt:Date,
-    _id:string
+    updatedAt:Date
 }
 const postSchema = new mongoose.Schema<IPostDocument>({
     description:{
